@@ -2,7 +2,7 @@ import { mockPerformance, mockAttendance, mockCourses, mockTests } from "@/lib/m
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { PerformanceChart } from "@/components/charts/performance-chart";
-import { RadarChart } from "@/components/charts/radar-chart";
+import { ActivityRadarChart } from "@/components/charts/radar-chart";
 import { TrendingUp, Users, CheckCircle, Award } from "lucide-react";
 
 export default function PerformancePage() {
@@ -42,7 +42,7 @@ export default function PerformancePage() {
             <CardTitle className="text-base">Overall Activity</CardTitle>
           </CardHeader>
           <CardContent>
-            <RadarChart />
+            <ActivityRadarChart />
           </CardContent>
         </Card>
       </div>

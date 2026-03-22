@@ -21,7 +21,7 @@ export default async function DashboardPage() {
   return (
     <div className="max-w-7xl mx-auto space-y-6">
       {/* Welcome Banner */}
-      <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 p-6 text-white">
+      <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 p-4 sm:p-6 text-white">
         <p className="text-blue-100 text-sm font-medium mb-1">{greeting} 👋</p>
         <h1 className="text-2xl font-bold mb-1">{user?.name ?? "Student"}</h1>
         <p className="text-blue-100 text-sm">Keep up the great work! You have {pendingAssignments} pending assignment{pendingAssignments !== 1 ? "s" : ""} and {availableTests} available test{availableTests !== 1 ? "s" : ""}.</p>
